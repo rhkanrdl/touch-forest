@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="147" height="220.417" viewBox="0 0 147 220.417">
+  <g id="그룹_3" data-name="그룹 3" transform="translate(-466.5 -601.5)">
+    <g id="bx-credit-card_1_" data-name="bx-credit-card (1)" transform="translate(613.669 645.745) rotate(90)">
+      <path id="패스_47" data-name="패스 47" d="M158.755,4H19.417A17.435,17.435,0,0,0,2,21.417v104.5a17.435,17.435,0,0,0,17.417,17.417H158.755a17.435,17.435,0,0,0,17.417-17.417V21.417A17.435,17.435,0,0,0,158.755,4ZM19.417,21.417H158.755V38.834H19.417Zm0,104.5V73.669H158.763l.009,52.252Z" fill="#fcb834"/>
+      <path id="패스_48" data-name="패스 48" d="M6,14H58.252V31.417H6Z" transform="translate(30.834 77.086)" fill="#fcb834"/>
+    </g>
+    <line id="선_17" data-name="선 17" x2="147" transform="translate(466.5 612)" fill="none" stroke="#786443" stroke-width="21"/>
+  </g>
+</svg>
