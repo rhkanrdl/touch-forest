@@ -1169,6 +1169,31 @@ body div.outline div#content article.float-bar button.main-btn:active {
   box-shadow: 0 10px 0 0 rgba(0, 0, 0, 0.25) inset;
 }
 
+body div.outline div#content article.float-bar button.main-btn.card {
+  background: #0077A8;
+  width: calc(100% - 324px);
+}
+
+body div.outline div#content article.float-bar a.cancle {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 50px;
+  width: 162px;
+  font-weight: 600;
+  background: #222;
+  line-height: 186px;
+  text-align: center;
+  color: #D6A65E;
+}
+
+body div.outline div#content article.float-bar a.cancle:active {
+  background: #444;
+  -webkit-transition: all 0s linear;
+  transition: all 0s linear;
+  -webkit-box-shadow: 0 10px 0 0 rgba(0, 0, 0, 0.25) inset;
+  box-shadow: 0 10px 0 0 rgba(0, 0, 0, 0.25) inset;
+}
+
 body div.outline div#content article.keypad {
   margin: 0 auto;
   width: 768px;
