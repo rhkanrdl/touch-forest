@@ -780,105 +780,144 @@ body {
             }
 
             article.ticket-info {
-                padding:50px 0 60px;
-                height:398px;
-                background:#fff;
-                text-align:center;
+                position:relative;
 
-                h3 {
-                    font-size:54px;
-                    font-weight:600;
-                    margin:0;
-    
-                    small {
-                        display:block;
-                        font-size:26px;
-                        font-weight:400;
-                        color:#519127;
-                        margin:6px 0;
+                div.swiper-wrapper {
+                    div.swiper-slide {
+                        background:#fff;
+                        padding:40px 0 60px;
+                        height:398px;
+                        text-align:center;
 
-                        strong {
-                            display:block;
-                            font-weight:500;
-                            font-size:30px;
-                            color:#555;
-                            margin:0 0 12px;
-                        }
-                    }
-                }
-
-                    
-                ul {
-                    width:768px;
-                    background:#0077A8;
-                    list-style:none;
-                    margin:40px auto 0;
-                    padding:0;
-                    border-radius:15px;
-
-                    li {
-                        display:inline-block;
-                        color:#fff;
-                        line-height:100px;
-                        font-size:26px;
-                        padding:0 10px;
-                    }
-                }
-    
-
-                &.used {
-                    background:#DDDDDD;
-
-
-                    h3 {
-                        color:#8C8C8C;
-
-                        small {
-                            color:#8C8C8C;
-
-                            strong {
-                                color:#8C8C8C;
-
+                        h3 {
+                            font-size:54px;
+                            font-weight:600;
+                            margin:0;
+            
+                            small {
+                                display:block;
+                                font-size:26px;
+                                font-weight:400;
+                                color:#519127;
+                                margin:4px 0;
+        
+                                strong {
+                                    display:block;
+                                    font-weight:500;
+                                    font-size:30px;
+                                    color:#555;
+                                    margin:0 0 6px;
+                                }
                             }
                         }
+        
+                            
+                        ul {
+                            width:768px;
+                            background:#0077A8;
+                            list-style:none;
+                            margin:30px auto 0;
+                            padding:0;
+                            border-radius:15px;
+        
+                            li {
+                                display:inline-block;
+                                color:#fff;
+                                line-height:100px;
+                                font-size:26px;
+                                padding:0 10px;
+                            }
+                        }
+            
+        
+                        &.used {
+                            background:#DDDDDD;
+        
+        
+                            h3 {
+                                color:#8C8C8C;
+        
+                                small {
+                                    color:#8C8C8C;
+        
+                                    strong {
+                                        color:#8C8C8C;
+        
+                                    }
+                                }
+                            }
+        
+                            ul {
+                                background:#9F9F9F;
+        
+                                li {
+                                    color:#bbb;
+        
+                                }
+                            }
+        
+                        }
+
+                        &.message {
+                            padding:120px 0 60px;
+                            height:398px;
+                            background:#000;
+            
+                                text-align:center;
+            
+                                h3 {
+                                    font-size:54px;
+                                    font-weight:600;
+                                    margin:0;
+                                    color:#FCB034;
+                
+                                    small {
+                                        display:block;
+                                        font-size:26px;
+                                        font-weight:400;
+                                        color:#519127;
+                                        margin:16px 0;
+                                        color:#fff;
+                                    }
+                                }
+                                
+                        }
+
                     }
+                }
+                        
+                div.swiper-pagination {
+                    
+                    bottom:20px;
 
-                    ul {
-                        background:#9F9F9F;
+                    span.swiper-pagination-bullet {
+                        width:23px;
+                        height:23px;
+                        margin:0 10px;
+                        background:#ccc;
+                        opacity:1;
 
-                        li {
-                            color:#bbb;
-
+                        &.swiper-pagination-bullet-active {
+                            background:#519127;
                         }
                     }
-
                 }
 
-            }
+                button {
+                    border:none;
+                    background:none;
+                    font-size:0;
+                    margin:0;
+                    padding:0;
+                    width:auto;
+                    height:auto;
+                    margin-top:-50px;
 
-            article.ticket-message {
-                padding:120px 0 60px;
-                height:398px;
-                background:#000;
-
-                    text-align:center;
-
-                    h3 {
-                        font-size:54px;
-                        font-weight:600;
-                        margin:0;
-                        color:#FCB034;
-    
-                        small {
-                            display:block;
-                            font-size:26px;
-                            font-weight:400;
-                            color:#519127;
-                            margin:16px 0;
-                            color:#fff;
-                        }
+                    i {
+                        font-size:100px;
+                        color:#CCCCCC;
                     }
-                    
+                }
 
             }
 
@@ -935,6 +974,17 @@ body {
                 section.sub-numcheck {
                     div.container {
                         padding:0;
+
+                        p.ticket-text {
+                            font-size:32px;
+                            font-weight:600;
+                            margin:0;
+                            text-align:center;
+                            color:#FCB834;
+                            line-height:100px;
+                            background:rgba(0,0,0,.5);
+                        }
+
 
                         fieldset {
                             background:rgba(0,0,0,.4);

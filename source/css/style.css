@@ -1483,44 +1483,48 @@ body div.outline div#content article.ticket-print button.check {
 }
 
 body div.outline div#content article.ticket-info {
-  padding: 50px 0 60px;
-  height: 398px;
+  position: relative;
+}
+
+body div.outline div#content article.ticket-info div.swiper-wrapper div.swiper-slide {
   background: #fff;
+  padding: 40px 0 60px;
+  height: 398px;
   text-align: center;
 }
 
-body div.outline div#content article.ticket-info h3 {
+body div.outline div#content article.ticket-info div.swiper-wrapper div.swiper-slide h3 {
   font-size: 54px;
   font-weight: 600;
   margin: 0;
 }
 
-body div.outline div#content article.ticket-info h3 small {
+body div.outline div#content article.ticket-info div.swiper-wrapper div.swiper-slide h3 small {
   display: block;
   font-size: 26px;
   font-weight: 400;
   color: #519127;
-  margin: 6px 0;
+  margin: 4px 0;
 }
 
-body div.outline div#content article.ticket-info h3 small strong {
+body div.outline div#content article.ticket-info div.swiper-wrapper div.swiper-slide h3 small strong {
   display: block;
   font-weight: 500;
   font-size: 30px;
   color: #555;
-  margin: 0 0 12px;
+  margin: 0 0 6px;
 }
 
-body div.outline div#content article.ticket-info ul {
+body div.outline div#content article.ticket-info div.swiper-wrapper div.swiper-slide ul {
   width: 768px;
   background: #0077A8;
   list-style: none;
-  margin: 40px auto 0;
+  margin: 30px auto 0;
   padding: 0;
   border-radius: 15px;
 }
 
-body div.outline div#content article.ticket-info ul li {
+body div.outline div#content article.ticket-info div.swiper-wrapper div.swiper-slide ul li {
   display: inline-block;
   color: #fff;
   line-height: 100px;
@@ -1528,51 +1532,83 @@ body div.outline div#content article.ticket-info ul li {
   padding: 0 10px;
 }
 
-body div.outline div#content article.ticket-info.used {
+body div.outline div#content article.ticket-info div.swiper-wrapper div.swiper-slide.used {
   background: #DDDDDD;
 }
 
-body div.outline div#content article.ticket-info.used h3 {
+body div.outline div#content article.ticket-info div.swiper-wrapper div.swiper-slide.used h3 {
   color: #8C8C8C;
 }
 
-body div.outline div#content article.ticket-info.used h3 small {
+body div.outline div#content article.ticket-info div.swiper-wrapper div.swiper-slide.used h3 small {
   color: #8C8C8C;
 }
 
-body div.outline div#content article.ticket-info.used h3 small strong {
+body div.outline div#content article.ticket-info div.swiper-wrapper div.swiper-slide.used h3 small strong {
   color: #8C8C8C;
 }
 
-body div.outline div#content article.ticket-info.used ul {
+body div.outline div#content article.ticket-info div.swiper-wrapper div.swiper-slide.used ul {
   background: #9F9F9F;
 }
 
-body div.outline div#content article.ticket-info.used ul li {
+body div.outline div#content article.ticket-info div.swiper-wrapper div.swiper-slide.used ul li {
   color: #bbb;
 }
 
-body div.outline div#content article.ticket-message {
+body div.outline div#content article.ticket-info div.swiper-wrapper div.swiper-slide.message {
   padding: 120px 0 60px;
   height: 398px;
   background: #000;
   text-align: center;
 }
 
-body div.outline div#content article.ticket-message h3 {
+body div.outline div#content article.ticket-info div.swiper-wrapper div.swiper-slide.message h3 {
   font-size: 54px;
   font-weight: 600;
   margin: 0;
   color: #FCB034;
 }
 
-body div.outline div#content article.ticket-message h3 small {
+body div.outline div#content article.ticket-info div.swiper-wrapper div.swiper-slide.message h3 small {
   display: block;
   font-size: 26px;
   font-weight: 400;
   color: #519127;
   margin: 16px 0;
   color: #fff;
+}
+
+body div.outline div#content article.ticket-info div.swiper-pagination {
+  bottom: 20px;
+}
+
+body div.outline div#content article.ticket-info div.swiper-pagination span.swiper-pagination-bullet {
+  width: 23px;
+  height: 23px;
+  margin: 0 10px;
+  background: #ccc;
+  opacity: 1;
+}
+
+body div.outline div#content article.ticket-info div.swiper-pagination span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: #519127;
+}
+
+body div.outline div#content article.ticket-info button {
+  border: none;
+  background: none;
+  font-size: 0;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  height: auto;
+  margin-top: -50px;
+}
+
+body div.outline div#content article.ticket-info button i {
+  font-size: 100px;
+  color: #CCCCCC;
 }
 
 body div.outline div#content article.tabs {
@@ -1624,6 +1660,16 @@ body div.outline div#content.sub h2 {
 
 body div.outline div#content.sub section.sub-numcheck div.container {
   padding: 0;
+}
+
+body div.outline div#content.sub section.sub-numcheck div.container p.ticket-text {
+  font-size: 32px;
+  font-weight: 600;
+  margin: 0;
+  text-align: center;
+  color: #FCB834;
+  line-height: 100px;
+  background: rgba(0, 0, 0, 0.5);
 }
 
 body div.outline div#content.sub section.sub-numcheck div.container fieldset {

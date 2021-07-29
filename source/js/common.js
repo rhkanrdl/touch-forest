@@ -9,6 +9,24 @@ $(function () {
 
 
 
+    var swiper = new Swiper(".ticket-info", {
+
+        speed: 500,
+        loop:true,
+        spaceBetween: 80,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'bullets',
+        }
+    });
+
+
     
     $("button.main-toggle").on("click", function(){
         $(this).parent().toggleClass("active");
