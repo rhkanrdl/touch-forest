@@ -1114,6 +1114,7 @@ body div.outline div#content article.float-bar {
   right: 0;
   bottom: 0;
   height: 186px;
+  z-index: 120;
   text-align: left;
   background: #303030;
   font-size: 0;
@@ -1486,28 +1487,62 @@ body div.outline div#content article.ticket-info {
   position: relative;
 }
 
-body div.outline div#content article.ticket-info div.swiper-wrapper div.swiper-slide {
+body div.outline div#content article.ticket-info div.list-wrapper div {
+  position: relative;
   background: #fff;
-  padding: 40px 0 60px;
-  height: 398px;
-  text-align: center;
+  padding: 40px;
+  margin: 20px 20px;
 }
 
-body div.outline div#content article.ticket-info div.swiper-wrapper div.swiper-slide h3 {
-  font-size: 54px;
+body div.outline div#content article.ticket-info div.list-wrapper div h3 {
+  font-size: 42px;
   font-weight: 600;
   margin: 0;
 }
 
-body div.outline div#content article.ticket-info div.swiper-wrapper div.swiper-slide h3 small {
+body div.outline div#content article.ticket-info div.list-wrapper div h3 input {
+  display: none;
+}
+
+body div.outline div#content article.ticket-info div.list-wrapper div h3 label {
+  position: absolute;
+  z-index: 100;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  padding: 30px;
+  color: #555;
+  border: 10px solid transparent;
+}
+
+body div.outline div#content article.ticket-info div.list-wrapper div h3 label i {
+  position: relative;
+  top: 4px;
+  margin: 0 6px 0 0;
+  color: #ccc;
+  font-size: 50px;
+  vertical-align: top;
+}
+
+body div.outline div#content article.ticket-info div.list-wrapper div h3 input:checked + label {
+  color: #222;
+  border-color: #0077A8;
+}
+
+body div.outline div#content article.ticket-info div.list-wrapper div h3 input:checked + label i {
+  color: #0077A8;
+}
+
+body div.outline div#content article.ticket-info div.list-wrapper div h3 small {
   display: block;
   font-size: 26px;
   font-weight: 400;
   color: #519127;
-  margin: 4px 0;
+  margin: 10px 0 4px;
 }
 
-body div.outline div#content article.ticket-info div.swiper-wrapper div.swiper-slide h3 small strong {
+body div.outline div#content article.ticket-info div.list-wrapper div h3 small strong {
   display: block;
   font-weight: 500;
   font-size: 30px;
@@ -1515,62 +1550,66 @@ body div.outline div#content article.ticket-info div.swiper-wrapper div.swiper-s
   margin: 0 0 6px;
 }
 
-body div.outline div#content article.ticket-info div.swiper-wrapper div.swiper-slide ul {
-  width: 768px;
+body div.outline div#content article.ticket-info div.list-wrapper div ul {
+  text-align: center;
   background: #0077A8;
   list-style: none;
-  margin: 30px auto 0;
-  padding: 0;
+  padding: 0 20px;
+  margin: 30px 0 0;
   border-radius: 15px;
 }
 
-body div.outline div#content article.ticket-info div.swiper-wrapper div.swiper-slide ul li {
+body div.outline div#content article.ticket-info div.list-wrapper div ul li {
   display: inline-block;
   color: #fff;
-  line-height: 100px;
+  line-height: 60px;
   font-size: 26px;
   padding: 0 10px;
 }
 
-body div.outline div#content article.ticket-info div.swiper-wrapper div.swiper-slide.used {
+body div.outline div#content article.ticket-info div.list-wrapper div.on {
+  padding-top: 100px;
+}
+
+body div.outline div#content article.ticket-info div.list-wrapper div.used {
   background: #DDDDDD;
 }
 
-body div.outline div#content article.ticket-info div.swiper-wrapper div.swiper-slide.used h3 {
+body div.outline div#content article.ticket-info div.list-wrapper div.used h3 {
   color: #8C8C8C;
 }
 
-body div.outline div#content article.ticket-info div.swiper-wrapper div.swiper-slide.used h3 small {
+body div.outline div#content article.ticket-info div.list-wrapper div.used h3 small {
   color: #8C8C8C;
 }
 
-body div.outline div#content article.ticket-info div.swiper-wrapper div.swiper-slide.used h3 small strong {
+body div.outline div#content article.ticket-info div.list-wrapper div.used h3 small strong {
   color: #8C8C8C;
 }
 
-body div.outline div#content article.ticket-info div.swiper-wrapper div.swiper-slide.used ul {
+body div.outline div#content article.ticket-info div.list-wrapper div.used ul {
   background: #9F9F9F;
 }
 
-body div.outline div#content article.ticket-info div.swiper-wrapper div.swiper-slide.used ul li {
-  color: #bbb;
+body div.outline div#content article.ticket-info div.list-wrapper div.used ul li {
+  color: #fff;
 }
 
-body div.outline div#content article.ticket-info div.swiper-wrapper div.swiper-slide.message {
+body div.outline div#content article.ticket-info div.list-wrapper div.message {
   padding: 120px 0 60px;
   height: 398px;
   background: #000;
   text-align: center;
 }
 
-body div.outline div#content article.ticket-info div.swiper-wrapper div.swiper-slide.message h3 {
+body div.outline div#content article.ticket-info div.list-wrapper div.message h3 {
   font-size: 54px;
   font-weight: 600;
   margin: 0;
   color: #FCB034;
 }
 
-body div.outline div#content article.ticket-info div.swiper-wrapper div.swiper-slide.message h3 small {
+body div.outline div#content article.ticket-info div.list-wrapper div.message h3 small {
   display: block;
   font-size: 26px;
   font-weight: 400;
@@ -1672,6 +1711,11 @@ body div.outline div#content.sub section.sub-numcheck div.container p.ticket-tex
   background: rgba(0, 0, 0, 0.5);
 }
 
+body div.outline div#content.sub section.sub-numcheck div.container p.ticket-text.error {
+  background: #CB4921;
+  color: #fff;
+}
+
 body div.outline div#content.sub section.sub-numcheck div.container fieldset {
   background: rgba(0, 0, 0, 0.4);
   text-align: center;
@@ -1695,8 +1739,8 @@ body div.outline div#content.sub section.sub-numcheck div.container fieldset inp
   vertical-align: top;
   height: 124px;
   border: none;
-  border-radius: 15px 0 0 15px;
-  width: 582px;
+  border-radius: 15px;
+  width: 740px;
   margin: 0;
   text-align: center;
   font-size: 40px;
@@ -1704,28 +1748,6 @@ body div.outline div#content.sub section.sub-numcheck div.container fieldset inp
   outline: none;
   background: #fff;
   color: #000;
-}
-
-body div.outline div#content.sub section.sub-numcheck div.container fieldset button.submit {
-  display: inline-block;
-  vertical-align: top;
-  margin: 0;
-  height: 124px;
-  border-radius: 0 15px 15px 0;
-  width: 158px;
-  border: none;
-  background: #519127;
-  color: #fff;
-  font-size: 50px;
-  font-weight: 600;
-}
-
-body div.outline div#content.sub section.sub-numcheck div.container fieldset button.submit:active {
-  background: #366E12;
-  -webkit-transition: all 0s linear;
-  transition: all 0s linear;
-  -webkit-box-shadow: 0 10px 0 0 rgba(0, 0, 0, 0.25) inset;
-  box-shadow: 0 10px 0 0 rgba(0, 0, 0, 0.25) inset;
 }
 
 body div.outline div#content.sub section.sub-numcheck div.container fieldset i.information {
@@ -2008,6 +2030,14 @@ body div.outline div#content.sub section.sub-view div.container div.tab-box div.
 
 body div.outline div#content.sub section.sub-view div.container div.tab-box div.tab-contents div.user01 button.type02 i {
   color: #519127;
+}
+
+body div.outline div#content.sub section.sub-view div.container div.tab-box div.tab-contents div.user01 button.type03 i {
+  color: #F1592A;
+}
+
+body div.outline div#content.sub section.sub-view div.container div.tab-box div.tab-contents div.user01.three button {
+  width: calc((100% - 60px) / 3);
 }
 
 body div.outline div#content.sub section.sub-view div.container div.tab-box div.tab-contents div.user02 {

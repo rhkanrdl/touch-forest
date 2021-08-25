@@ -46,81 +46,11 @@
                         <h2>예약조회</h2>
 
                         <p class="ticket-text">
-                            3건의 예약내역이 조회되었습니다.
+                            예약번호를 입력해주세요
                         </p>
-
-                        <article class="ticket-info">
-                            <!-- 사용된 입장권인 경우 클래스 used 추가 -->
-
-                            <div class="swiper-wrapper">
-
-
-                                <div class="swiper-slide">
-                                    <h3>
-                                        빙삭빙삭 숲내음 A
-
-                                        <small>
-                                            <strong>예약번호 : 684553564685435</strong>
-                                            <span>예약날짜 : 2021-10-18 / 06:00 ~ 17:30</span>
-                                        </small>
-                                    </h3>
-
-
-                                    <ul>
-                                        <li>예약자명 : 최경우</li>
-                                        <li>예약인원 : 성인 3명</li>
-                                        
-                                        <!-- <li>이미 검표된 입장권 입니다.</li> -->
-                                    </ul>
-                                </div>
-
-
-                                <div class="swiper-slide used">
-                                    <!-- 사용된 입장권인 경우 클래스 used 추가 -->
-                                    <h3>
-                                        빙삭빙삭 숲내음 A
-
-                                        <small>
-                                            <strong>예약번호 : 684553564685435</strong>
-                                            <span>예약날짜 : 2021-10-18 / 06:00 ~ 17:30</span>
-                                        </small>
-                                    </h3>
-
-
-                                    <ul>
-                                        <!-- <li>예약자명 : 최경우</li>
-                                        <li>예약인원 : 성인 3명</li> -->
-                                        
-                                        <li>이미 검표된 입장권 입니다.</li>
-                                    </ul>
-                                </div>
-
-
-                                <div class="swiper-slide message">
-                                    <h3>
-                                        예약정보가 없습니다.
-    
-                                        <small>
-                                            예약번호를 입력해주세요
-                                        </small>
-                                    </h3>
-                                </div>
-
-
-
-
-
-                            </div>
-
-
-                            <div class="swiper-pagination"></div>
-                            <button class="swiper-button-prev"><i class='bx bx-chevron-left'></i>이전</button>
-                            <button class="swiper-button-next"><i class='bx bx-chevron-right'></i>다음</button>
-
-
-                        </article>
-
-
+                        <p class="ticket-text error">
+                            예약된 내역이 없습니다. 예약번호를 다시 확인해주세요
+                        </p>
 
 
 
@@ -130,7 +60,7 @@
 
                             <label for="number">예약번호</label>
                             <input id="number" class="forkeypad" type="text" autofocus placeholder="예약번호 입력">
-                            <button class="submit">확인</button>
+
                             
                             <i class="information on">- 를 제외하고 입력해주세요</i>
                             <!-- 메시지 유무에 따라 클래스 on 토글 -->
@@ -162,7 +92,7 @@
 
                 <article class="float-bar">
                     <a class="home" href=""><i class='bx bx-home'></i>HOME</a>
-                    <button class="main-btn">입장권 출력</button>
+                    <button class="main-btn">확인</button>
                 </article>
 
 

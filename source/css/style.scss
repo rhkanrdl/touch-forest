@@ -394,6 +394,7 @@ body {
                 right:0;
                 bottom:0;
                 height:186px;
+                z-index:120;
                 text-align:left;
                 background:#303030;
                 font-size:0;
@@ -782,24 +783,58 @@ body {
             article.ticket-info {
                 position:relative;
 
-                div.swiper-wrapper {
-                    div.swiper-slide {
+                div.list-wrapper {
+                    div {
+                        position:relative;
                         background:#fff;
-                        padding:40px 0 60px;
-                        height:398px;
-                        text-align:center;
+                        padding:40px;
+                        margin:20px 20px;
 
                         h3 {
-                            font-size:54px;
+                            font-size:42px;
                             font-weight:600;
                             margin:0;
+
+                            input {
+                                display:none;
+                            }
+
+                            label {
+                                position:absolute;
+                                z-index:100;
+                                left:0;
+                                right:0;
+                                top:0;
+                                bottom:0;
+                                padding:30px;
+                                color:#555;
+                                border:10px solid transparent;
+
+                                i {
+                                    position:relative;
+                                    top:4px;
+                                    margin:0 6px 0 0;
+                                    color:#ccc;
+                                    font-size:50px;
+                                    vertical-align:top;
+                                }
+                            }
+
+                            input:checked + label {
+                                color:#222;
+                                border-color:#0077A8;
+
+                                i {
+                                    color:#0077A8
+                                }
+                            }
             
                             small {
                                 display:block;
                                 font-size:26px;
                                 font-weight:400;
                                 color:#519127;
-                                margin:4px 0;
+                                margin:10px 0 4px;
         
                                 strong {
                                     display:block;
@@ -813,20 +848,25 @@ body {
         
                             
                         ul {
-                            width:768px;
+                            text-align:center;
                             background:#0077A8;
                             list-style:none;
-                            margin:30px auto 0;
-                            padding:0;
+                            padding:0 20px;
+                            margin:30px 0 0;
                             border-radius:15px;
         
                             li {
                                 display:inline-block;
                                 color:#fff;
-                                line-height:100px;
+                                line-height:60px;
                                 font-size:26px;
                                 padding:0 10px;
                             }
+                        }
+
+                        &.on {
+                            padding-top:100px;
+                            
                         }
             
         
@@ -851,7 +891,7 @@ body {
                                 background:#9F9F9F;
         
                                 li {
-                                    color:#bbb;
+                                    color:#fff;
         
                                 }
                             }
@@ -983,6 +1023,11 @@ body {
                             color:#FCB834;
                             line-height:100px;
                             background:rgba(0,0,0,.5);
+
+                            &.error {
+                                background:#CB4921;
+                                color:#fff;
+                            }
                         }
 
 
@@ -1008,8 +1053,8 @@ body {
                                 vertical-align:top;
                                 height:124px;
                                 border:none;
-                                border-radius:15px 0 0 15px;
-                                width:582px;
+                                border-radius:15px;
+                                width:740px;
                                 margin:0;
                                 text-align:center;
                                 font-size:40px;
@@ -1020,26 +1065,26 @@ body {
 
                             }
 
-                            button.submit {
-                                display:inline-block;
-                                vertical-align:top;
-                                margin: 0;
-                                height:124px;
-                                border-radius:0 15px 15px 0;
-                                width:158px;
-                                border:none;
-                                background:#519127;
-                                color:#fff;
-                                font-size:50px;
-                                font-weight:600;
+                            // button.submit {
+                            //     display:inline-block;
+                            //     vertical-align:top;
+                            //     margin: 0;
+                            //     height:124px;
+                            //     border-radius:0 15px 15px 0;
+                            //     width:158px;
+                            //     border:none;
+                            //     background:#519127;
+                            //     color:#fff;
+                            //     font-size:50px;
+                            //     font-weight:600;
 
-                                &:active {
-                                    background:#366E12;
-                                    @include ani(0s);
-                                    @include inner-shadow($x:0,$y: 10px, $blur: 0, $spread: 0, $alpha: 0.25);
-                                }
+                            //     &:active {
+                            //         background:#366E12;
+                            //         @include ani(0s);
+                            //         @include inner-shadow($x:0,$y: 10px, $blur: 0, $spread: 0, $alpha: 0.25);
+                            //     }
         
-                            }
+                            // }
 
 
                             i.information {
@@ -1340,6 +1385,19 @@ body {
                                             }
                                         }
 
+                                        &.type03 {
+                                            i {
+                                                color:#F1592A;
+                                            }
+                                        }
+
+                                    }
+
+                                    &.three {
+                                        button {
+                                            width:calc((100% - 60px) / 3);
+
+                                        }
                                     }
                                 }
 
