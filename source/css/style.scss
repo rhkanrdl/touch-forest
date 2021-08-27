@@ -1191,7 +1191,7 @@ body {
                             position:relative;
                             list-style:none;
                             margin:0;
-                            padding:0;
+                            padding:0 0 50px;
                             height:1110px;
 
                             &::after {
@@ -1395,7 +1395,7 @@ body {
 
                                     &.three {
                                         button {
-                                            width:calc((100% - 60px) / 3);
+                                            width:calc((100% - 61px) / 3);
 
                                         }
                                     }

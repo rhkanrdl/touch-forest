@@ -8,7 +8,7 @@ $(function () {
     var windowW = $(window).width();
 
 
-
+try {
     var swiper = new Swiper(".ticket-info", {
 
         speed: 500,
@@ -25,6 +25,8 @@ $(function () {
             type: 'bullets',
         }
     });
+
+} catch {}
 
 
     
