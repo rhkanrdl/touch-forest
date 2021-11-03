@@ -775,7 +775,7 @@ html {
 ::-webkit-scrollbar-button:start:decrement, ::-webkit-scrollbar-button:end:increment {
   display: block;
   height: 10px;
-  background: #efefef;
+  background: url(`./images/bg.png`) #efefef;
 }
 
 ::-webkit-scrollbar-track {
@@ -1485,6 +1485,10 @@ body div.outline div#content article.ticket-print button.check {
 
 body div.outline div#content article.ticket-info {
   position: relative;
+}
+
+body div.outline div#content article.ticket-info div.list-wrapper {
+  height: 1268px;
 }
 
 body div.outline div#content article.ticket-info div.list-wrapper div {

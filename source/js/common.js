@@ -78,6 +78,11 @@ $('ul.list').niceScroll({
   emulatetouch:true
 });
 
+
+$('div.list-wrapper').niceScroll({
+    emulatetouch:true
+  });
+
     // var keypadtarget = $("input:focus").attr("id");
 
     
