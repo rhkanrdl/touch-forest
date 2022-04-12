@@ -1654,6 +1654,43 @@ body div.outline div#content article.ticket-info button i {
   color: #CCCCCC;
 }
 
+body div.outline div#content article.tabsone {
+  background: #262626;
+  text-align: center;
+  font-size: 0;
+}
+
+body div.outline div#content article.tabsone a,
+body div.outline div#content article.tabsone button {
+  display: inline-block;
+  vertical-align: top;
+  border: none;
+  padding: 0;
+  margin: 0;
+  border: none;
+  width: 100%;
+  font-size: 62px;
+  color: #777;
+  line-height: 174px;
+  border-bottom: 6px solid #3A3A3A;
+  background: #262626;
+}
+
+body div.outline div#content article.tabsone a.on,
+body div.outline div#content article.tabsone button.on {
+  color: #fff;
+  font-weight: 600;
+}
+
+body div.outline div#content article.tabsone a:active,
+body div.outline div#content article.tabsone button:active {
+  background: #222;
+  -webkit-transition: all 0s linear;
+  transition: all 0s linear;
+  -webkit-box-shadow: 0 10px 0 0 rgba(0, 0, 0, 0.25) inset;
+  box-shadow: 0 10px 0 0 rgba(0, 0, 0, 0.25) inset;
+}
+
 body div.outline div#content article.tabs {
   background: #262626;
   text-align: center;
@@ -1670,7 +1707,7 @@ body div.outline div#content article.tabs button {
   border: none;
   width: 50%;
   font-size: 62px;
-  color: #777;
+  color: #fff;
   line-height: 174px;
   border-bottom: 6px solid #3A3A3A;
   background: #262626;
@@ -1679,7 +1716,7 @@ body div.outline div#content article.tabs button {
 body div.outline div#content article.tabs a.on,
 body div.outline div#content article.tabs button.on {
   border-color: #FCB034;
-  color: #fff;
+  color: #FCB034;
   font-weight: 600;
 }
 

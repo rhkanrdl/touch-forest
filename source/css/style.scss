@@ -964,6 +964,40 @@ body {
 
             }
 
+            article.tabsone {
+                background:#262626;
+                text-align:center;
+                font-size:0;
+
+                a,
+                button {
+                    display:inline-block;
+                    vertical-align:top;
+                    border:none;
+                    padding:0;
+                    margin:0;
+                    border:none;
+                    width:100%;
+                    font-size:62px;
+                    color:#777;
+                    line-height:174px;
+                    border-bottom:6px solid #3A3A3A;
+                    background:#262626;
+                    
+                    &.on {
+                        // border-color:#FCB034;
+                        color:#fff;
+                        font-weight:600;
+                    }
+
+                    &:active {
+                        background:#222;
+                        @include ani(0s);
+                        @include inner-shadow($x:0,$y: 10px, $blur: 0, $spread: 0, $alpha: 0.25);
+                    }
+                }
+            }
+
             article.tabs {
                 background:#262626;
                 text-align:center;
@@ -979,14 +1013,14 @@ body {
                     border:none;
                     width:50%;
                     font-size:62px;
-                    color:#777;
+                    color:#fff;
                     line-height:174px;
                     border-bottom:6px solid #3A3A3A;
                     background:#262626;
                     
                     &.on {
                         border-color:#FCB034;
-                        color:#fff;
+                        color:#FCB034;
                         font-weight:600;
                     }
 
