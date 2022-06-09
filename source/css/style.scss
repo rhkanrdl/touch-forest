@@ -394,7 +394,7 @@ body {
                 right:0;
                 bottom:0;
                 height:186px;
-                z-index:120;
+                z-index:12000;
                 text-align:left;
                 background:#303030;
                 font-size:0;
@@ -425,6 +425,9 @@ body {
                 }
 
                 button.main-btn {
+                    position:absolute;
+                    top:0;
+                    right:0;
                     display:inline-block;
                     vertical-align:top;
                     width:calc(100% - 162px);
@@ -437,10 +440,15 @@ body {
                     color:#fff;
                     font-size:50px;
                     font-weight:600;
+                    animation-name: btn-ani;
+                    animation-duration:0.8s;
+                    animation-duration: leaner;
+                    animation-iteration-count:infinite;
+                    animation-direction:alternate;
+                    animation-fill-mode: forwards;
 
                     &:active {
                         background:#366E12;
-                        @include ani(0s);
                         @include inner-shadow($x:0,$y: 10px, $blur: 0, $spread: 0, $alpha: 0.25);
                     }
 
@@ -452,6 +460,18 @@ body {
 
 
                 }
+
+
+                @-webkit-keyframes btn-ani {
+                    0% {
+                      top:0;
+                    }
+                    100% {
+                      top:-30px;
+                    }
+                  }
+
+
 
                a.cancle {
                     display:inline-block;

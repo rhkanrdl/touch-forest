@@ -1114,7 +1114,7 @@ body div.outline div#content article.float-bar {
   right: 0;
   bottom: 0;
   height: 186px;
-  z-index: 120;
+  z-index: 12000;
   text-align: left;
   background: #303030;
   font-size: 0;
@@ -1148,6 +1148,9 @@ body div.outline div#content article.float-bar a.home i {
 }
 
 body div.outline div#content article.float-bar button.main-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
   display: inline-block;
   vertical-align: top;
   width: calc(100% - 162px);
@@ -1160,12 +1163,22 @@ body div.outline div#content article.float-bar button.main-btn {
   color: #fff;
   font-size: 50px;
   font-weight: 600;
+  -webkit-animation-name: btn-ani;
+          animation-name: btn-ani;
+  -webkit-animation-duration: 0.8s;
+          animation-duration: 0.8s;
+  -webkit-animation-duration: leaner;
+          animation-duration: leaner;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 body div.outline div#content article.float-bar button.main-btn:active {
   background: #366E12;
-  -webkit-transition: all 0s linear;
-  transition: all 0s linear;
   -webkit-box-shadow: 0 10px 0 0 rgba(0, 0, 0, 0.25) inset;
   box-shadow: 0 10px 0 0 rgba(0, 0, 0, 0.25) inset;
 }
@@ -1173,6 +1186,15 @@ body div.outline div#content article.float-bar button.main-btn:active {
 body div.outline div#content article.float-bar button.main-btn.card {
   background: #0077A8;
   width: calc(100% - 324px);
+}
+
+@-webkit-keyframes btn-ani {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: -30px;
+  }
 }
 
 body div.outline div#content article.float-bar a.cancle {
